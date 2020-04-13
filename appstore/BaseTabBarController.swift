@@ -12,6 +12,9 @@ class BaseTabBarController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let navigationBarAppearance = UINavigationBarAppearance()
+    navigationBarAppearance.configureWithDefaultBackground()
+
     let redViewController = UIViewController()
     redViewController.view.backgroundColor = .white
     redViewController.navigationItem.title = "Apps"
@@ -20,6 +23,7 @@ class BaseTabBarController: UITabBarController {
     redNavigationController.tabBarItem.title = "Apps"
     redNavigationController.tabBarItem.image = UIImage(named: "apps")
     redNavigationController.navigationBar.prefersLargeTitles = true
+    redNavigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
 
 
     let blueViewController = UIViewController()
@@ -30,6 +34,7 @@ class BaseTabBarController: UITabBarController {
     blueNavigationController.tabBarItem.title = "Search"
     blueNavigationController.tabBarItem.image = UIImage(named: "search")
     blueNavigationController.navigationBar.prefersLargeTitles = true
+    blueNavigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
 
     viewControllers = [
       redNavigationController,
