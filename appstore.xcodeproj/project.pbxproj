@@ -13,6 +13,7 @@
 		12D8700424441D77005B15F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D8700224441D77005B15F6 /* Main.storyboard */; };
 		12D8700624441D79005B15F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D8700524441D79005B15F6 /* Assets.xcassets */; };
 		12D8700924441D79005B15F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D8700724441D79005B15F6 /* LaunchScreen.storyboard */; };
+		12D8701124441F36005B15F6 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D8701024441F36005B15F6 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		12D8700524441D79005B15F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12D8700824441D79005B15F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D8700A24441D79005B15F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D8701024441F36005B15F6 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				12D8700024441D77005B15F6 /* ViewController.swift */,
 				12D8700224441D77005B15F6 /* Main.storyboard */,
 				12D8700524441D79005B15F6 /* Assets.xcassets */,
+				12D8701024441F36005B15F6 /* BaseTabBarController.swift */,
 				12D8700724441D79005B15F6 /* LaunchScreen.storyboard */,
 				12D8700A24441D79005B15F6 /* Info.plist */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D8701124441F36005B15F6 /* BaseTabBarController.swift in Sources */,
 				12D8700124441D77005B15F6 /* ViewController.swift in Sources */,
 				12D86FFD24441D77005B15F6 /* AppDelegate.swift in Sources */,
 				12D86FFF24441D77005B15F6 /* SceneDelegate.swift in Sources */,
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DX3TWD8RW8;
 				INFOPLIST_FILE = appstore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.karlisberzins.appstore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DX3TWD8RW8;
 				INFOPLIST_FILE = appstore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.karlisberzins.appstore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
